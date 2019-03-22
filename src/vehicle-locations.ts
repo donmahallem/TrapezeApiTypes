@@ -14,6 +14,7 @@ export interface IDeletedVehicleLocation extends IBaseVehicleLocation {
     isDeleted: true;
 }
 export interface IVehicleLocation extends IBaseVehicleLocation {
+    isDeleted: undefined;
     category: string;
     color: string;
     heading: number;
