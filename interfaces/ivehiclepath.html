@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IVehicleLocation | @donmahallem/trapeze-api-types</title>
+	<title>IVehiclePath | @donmahallem/trapeze-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ivehiclelocation.html">IVehicleLocation</a>
+					<a href="ivehiclepath.html">IVehiclePath</a>
 				</li>
 			</ul>
-			<h1>Interface IVehicleLocation</h1>
+			<h1>Interface IVehiclePath</h1>
 		</div>
 	</div>
 </header>
@@ -70,12 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="ibasevehiclelocation.html" class="tsd-signature-type">IBaseVehicleLocation</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">IVehicleLocation</span>
-							</li>
-						</ul>
+						<span class="target">IVehiclePath</span>
 					</li>
 				</ul>
 			</section>
@@ -86,15 +81,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#category" class="tsd-kind-icon">category</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#color" class="tsd-kind-icon">color</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#heading" class="tsd-kind-icon">heading</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ivehiclelocation.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#latitude" class="tsd-kind-icon">latitude</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#longitude" class="tsd-kind-icon">longitude</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#path" class="tsd-kind-icon">path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclelocation.html#tripid" class="tsd-kind-icon">trip<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclepath.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ivehiclepath.html#waypoints" class="tsd-kind-icon">way<wbr>Points</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,93 +91,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="category" class="tsd-anchor"></a>
-					<h3>category</h3>
-					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L17">vehicle-locations.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="color" class="tsd-anchor"></a>
 					<h3>color</h3>
 					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L18">vehicle-locations.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-path-info.ts#L8">vehicle-path-info.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="heading" class="tsd-anchor"></a>
-					<h3>heading</h3>
-					<div class="tsd-signature tsd-kind-icon">heading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="waypoints" class="tsd-anchor"></a>
+					<h3>way<wbr>Points</h3>
+					<div class="tsd-signature tsd-kind-icon">way<wbr>Points<span class="tsd-signature-symbol">:</span> <a href="iwaypoint.html" class="tsd-signature-type">IWayPoint</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L19">vehicle-locations.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="ibasevehiclelocation.html">IBaseVehicleLocation</a>.<a href="ibasevehiclelocation.html#id">id</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L2">vehicle-locations.ts:2</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="latitude" class="tsd-anchor"></a>
-					<h3>latitude</h3>
-					<div class="tsd-signature tsd-kind-icon">latitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L20">vehicle-locations.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="longitude" class="tsd-anchor"></a>
-					<h3>longitude</h3>
-					<div class="tsd-signature tsd-kind-icon">longitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L21">vehicle-locations.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L22">vehicle-locations.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="path" class="tsd-anchor"></a>
-					<h3>path</h3>
-					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="ipathsegment.html" class="tsd-signature-type">IPathSegment</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L23">vehicle-locations.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tripid" class="tsd-anchor"></a>
-					<h3>trip<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">trip<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-locations.ts#L24">vehicle-locations.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/401438a/src/vehicle-path-info.ts#L9">vehicle-path-info.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,48 +140,27 @@
 					<li class=" tsd-kind-interface">
 						<a href="itrippassages.html" class="tsd-kind-icon">ITrip<wbr>Passages</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ivehiclelocation.html" class="tsd-kind-icon">IVehicle<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ivehiclelocationlist.html" class="tsd-kind-icon">IVehicle<wbr>Location<wbr>List</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="ivehiclelocation.html" class="tsd-kind-icon">IVehicle<wbr>Location</a>
+						<a href="ivehiclepath.html" class="tsd-kind-icon">IVehicle<wbr>Path</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#category" class="tsd-kind-icon">category</a>
+								<a href="ivehiclepath.html#color" class="tsd-kind-icon">color</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#color" class="tsd-kind-icon">color</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#heading" class="tsd-kind-icon">heading</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="ivehiclelocation.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#latitude" class="tsd-kind-icon">latitude</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#longitude" class="tsd-kind-icon">longitude</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#path" class="tsd-kind-icon">path</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ivehiclelocation.html#tripid" class="tsd-kind-icon">trip<wbr>Id</a>
+								<a href="ivehiclepath.html#waypoints" class="tsd-kind-icon">way<wbr>Points</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="ivehiclelocationlist.html" class="tsd-kind-icon">IVehicle<wbr>Location<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="ivehiclepath.html" class="tsd-kind-icon">IVehicle<wbr>Path</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ivehiclepathinfo.html" class="tsd-kind-icon">IVehicle<wbr>Path<wbr>Info</a>
 					</li>
