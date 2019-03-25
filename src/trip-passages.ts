@@ -6,7 +6,7 @@ export interface IStopInfo {
 
 export interface ITripPassage {
     actualTime: string;
-    status: string | "PREDICTED" | "DEPARTED";
+    status: string | "PREDICTED" | "DEPARTED" | "STOPPING";
     stop: IStopInfo;
     stop_seq_num: string;
 }
