@@ -1,13 +1,11 @@
-export interface IStopInfo {
-    id: string;
-    name: string;
-    shortName: string;
-}
-
 export interface ITripPassage {
     actualTime: string;
-    status: string | "PREDICTED" | "DEPARTED";
-    stop: IStopInfo;
+    status: string | "PREDICTED" | "DEPARTED" | "STOPPING";
+    stop: {
+        id: string;
+        name: string;
+        shortName: string;
+    };
     stop_seq_num: string;
 }
 export interface ITripPassages {

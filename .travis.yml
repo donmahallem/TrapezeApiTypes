@@ -23,7 +23,6 @@ cache:
   directories:
   - node_modules
   - "$(npm config get prefix)/node_modules"
-before_install: npm install
 script:
 - npm run test:$TEST_SUITE
 after_success:
