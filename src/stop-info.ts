@@ -1,4 +1,6 @@
+import { StopId } from "./type-util";
+
 export interface IStopInfo {
-    id: string;
+    id: StopId;
     passengerName: string;
 }

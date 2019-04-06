@@ -1,5 +1,7 @@
+import { TripId, VehicleId } from "./type-util";
+
 export interface IBaseVehicleLocation {
-    id: string;
+    id: VehicleId;
 }
 
 export interface IPathSegment {
@@ -15,14 +17,14 @@ export interface IDeletedVehicleLocation extends IBaseVehicleLocation {
 }
 export interface IVehicleLocation extends IBaseVehicleLocation {
     isDeleted: undefined;
-    category: string;
+    category: string | "bus" | "tram";
     color: string;
     heading: number;
     latitude: number;
     longitude: number;
     name: string;
     path: IPathSegment[];
-    tripId: string;
+    tripId: TripId;
 }
 
 export type VehicleLocations = IDeletedVehicleLocation | IVehicleLocation;

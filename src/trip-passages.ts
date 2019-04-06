@@ -1,13 +1,13 @@
-import { Omit } from "./type-util";
+import { Omit, StopId, StopShortName } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface ITripPassage {
     actualTime: string;
     status: VEHICLE_STATUS;
     stop: {
-        id: string;
+        id: StopId;
         name: string;
-        shortName: string;
+        shortName: StopShortName;
     };
     stop_seq_num: string;
 }
