@@ -27,7 +27,7 @@ export interface IRoute {
     routeType: string;
     shortName: string;
 }
-export interface IStopInfo {
+export interface IStopPassage {
     actual: ActualDeparture[];
     directions: any[];
     firstPassageTime: number;

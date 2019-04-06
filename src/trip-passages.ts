@@ -13,7 +13,7 @@ export interface ITripPassage {
 }
 
 type IDepartedTripPassage = Omit<ITripPassage, "status"> & { status: "DEPARTED" };
-type IActualTripPassage = Omit<ITripPassage, "status"> & { status: string | "PREDICTED" | "DEPARTED" | "STOPPING" };
+type IActualTripPassage = Omit<ITripPassage, "status"> & { status: string | "PREDICTED" | "PLANNED" | "STOPPING" };
 
 export interface ITripPassages {
     actual: IActualTripPassage[];
