@@ -14,7 +14,6 @@ export interface IDeparture {
     vehicleId: string;
 }
 
-
 type DepartedDeparture = Omit<IDeparture, "status"> & { status: "DEPARTED" };
 type ActualDeparture = Omit<IDeparture, "status"> & { status: string | "PREDICTED" | "DEPARTED" | "STOPPING" };
 
