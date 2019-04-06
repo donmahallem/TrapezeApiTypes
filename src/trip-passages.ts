@@ -1,3 +1,4 @@
+import { Omit } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface ITripPassage {
