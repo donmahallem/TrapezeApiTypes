@@ -1,4 +1,4 @@
-import { Omit, RouteId } from "./type-util";
+import { Omit, RouteId, StopShortName } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface IDeparture {
@@ -24,7 +24,8 @@ export interface IRoute {
     directions: string[];
     id: RouteId;
     name: string;
-    routeType: string;
+    routeType: string | "bus";
+    // route short name
     shortName: string;
 }
 export interface IStopPassage {
@@ -36,5 +37,5 @@ export interface IStopPassage {
     old: DepartedDeparture[];
     routes: IRoute[];
     stopName: string;
-    stopShortName: string;
+    stopShortName: StopShortName;
 }
