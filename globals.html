@@ -75,6 +75,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/ideparture.html" class="tsd-kind-icon">IDeparture</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ipathsegment.html" class="tsd-kind-icon">IPath<wbr>Segment</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iroute.html" class="tsd-kind-icon">IRoute</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/isettings.html" class="tsd-kind-icon">ISettings</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/istopinfo.html" class="tsd-kind-icon">IStop<wbr>Info</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/itrippassage.html" class="tsd-kind-icon">ITrip<wbr>Passage</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/itrippassages.html" class="tsd-kind-icon">ITrip<wbr>Passages</a></li>
@@ -91,6 +92,15 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#actualdeparture" class="tsd-kind-icon">Actual<wbr>Departure</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#anycombination" class="tsd-kind-icon">Any<wbr>Combination</a></li>
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#countrycodes" class="tsd-kind-icon">Country<wbr>Codes</a></li>
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#departeddeparture" class="tsd-kind-icon">Departed<wbr>Departure</a></li>
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#iactualtrippassage" class="tsd-kind-icon">IActual<wbr>Trip<wbr>Passage</a></li>
+								<li class="tsd-kind-type-alias tsd-is-not-exported"><a href="globals.html#idepartedtrippassage" class="tsd-kind-icon">IDeparted<wbr>Trip<wbr>Passage</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#omit" class="tsd-kind-icon">Omit</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#vehicle_status" class="tsd-kind-icon">VEHICLE_<wbr>STATUS</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#valuesof" class="tsd-kind-icon">Values<wbr>Of</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#vehiclelocations" class="tsd-kind-icon">Vehicle<wbr>Locations</a></li>
 							</ul>
 						</section>
@@ -99,13 +109,103 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="actualdeparture" class="tsd-anchor"></a>
+					<h3>Actual<wbr>Departure</h3>
+					<div class="tsd-signature tsd-kind-icon">Actual<wbr>Departure<span class="tsd-signature-symbol">:</span> <a href="globals.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/ideparture.html" class="tsd-signature-type">IDeparture</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"status"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/stop-info.ts#L19">stop-info.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
+					<a name="anycombination" class="tsd-anchor"></a>
+					<h3>Any<wbr>Combination</h3>
+					<div class="tsd-signature tsd-kind-icon">Any<wbr>Combination<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T[keyof T]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/settings.ts#L11">settings.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="countrycodes" class="tsd-anchor"></a>
+					<h3>Country<wbr>Codes</h3>
+					<div class="tsd-signature tsd-kind-icon">Country<wbr>Codes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"ab"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"aa"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"af"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sq"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"am"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ar"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"hy"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"as"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ay"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"az"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ba"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"eu"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"bn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"dz"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"bh"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"bi"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"br"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"bg"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"my"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"be"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"km"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ca"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"zh"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"co"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"hr"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"cs"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"da"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"nl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"en"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"eo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"et"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fj"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fi"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fr"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fy"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"gd"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"gl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ka"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"de"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"el"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"kl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"gn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"gu"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ha"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"iw"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"hi"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"hu"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"is"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"in"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ia"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ie"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ik"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ga"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"it"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ja"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"jw"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"kn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ks"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"kk"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"rw"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ky"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"rn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ko"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ku"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"lo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"la"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"lv"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ln"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"lt"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mk"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mg"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ms"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ml"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mt"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mi"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mr"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"mn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"na"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ne"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"no"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"oc"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"or"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"om"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ps"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"fa"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"pl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"pt"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"pa"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"qu"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"rm"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ro"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ru"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sm"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sg"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sa"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sr"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sh"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"st"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sn"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sd"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"si"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ss"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sk"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"so"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"es"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"su"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sw"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"sv"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tl"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tg"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ta"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tt"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"te"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"th"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"bo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ti"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"to"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ts"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tr"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tk"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"tw"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"uk"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ur"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"uz"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"vi"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"vo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"cy"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"wo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"xh"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"ji"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"yo"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"zu"</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/settings.ts#L1">settings.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="departeddeparture" class="tsd-anchor"></a>
+					<h3>Departed<wbr>Departure</h3>
+					<div class="tsd-signature tsd-kind-icon">Departed<wbr>Departure<span class="tsd-signature-symbol">:</span> <a href="globals.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/ideparture.html" class="tsd-signature-type">IDeparture</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"status"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/stop-info.ts#L18">stop-info.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="iactualtrippassage" class="tsd-anchor"></a>
+					<h3>IActual<wbr>Trip<wbr>Passage</h3>
+					<div class="tsd-signature tsd-kind-icon">IActual<wbr>Trip<wbr>Passage<span class="tsd-signature-symbol">:</span> <a href="globals.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/itrippassage.html" class="tsd-signature-type">ITripPassage</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"status"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/trip-passages.ts#L16">trip-passages.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-not-exported">
+					<a name="idepartedtrippassage" class="tsd-anchor"></a>
+					<h3>IDeparted<wbr>Trip<wbr>Passage</h3>
+					<div class="tsd-signature tsd-kind-icon">IDeparted<wbr>Trip<wbr>Passage<span class="tsd-signature-symbol">:</span> <a href="globals.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/itrippassage.html" class="tsd-signature-type">ITripPassage</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"status"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/trip-passages.ts#L15">trip-passages.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="omit" class="tsd-anchor"></a>
+					<h3>Omit</h3>
+					<div class="tsd-signature tsd-kind-icon">Omit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">keyof T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/type-util.ts#L1">type-util.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vehicle_status" class="tsd-anchor"></a>
+					<h3>VEHICLE_<wbr>STATUS</h3>
+					<div class="tsd-signature tsd-kind-icon">VEHICLE_<wbr>STATUS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PREDICTED"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DEPARTED"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"STOPPING"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"PLANNED"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/vehicle-status.ts#L1">vehicle-status.ts:1</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
+					<a name="valuesof" class="tsd-anchor"></a>
+					<h3>Values<wbr>Of</h3>
+					<div class="tsd-signature tsd-kind-icon">Values<wbr>Of<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T[number]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/settings.ts#L10">settings.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="vehiclelocations" class="tsd-anchor"></a>
 					<h3>Vehicle<wbr>Locations</h3>
 					<div class="tsd-signature tsd-kind-icon">Vehicle<wbr>Locations<span class="tsd-signature-symbol">:</span> <a href="interfaces/ideletedvehiclelocation.html" class="tsd-signature-type">IDeletedVehicleLocation</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/ivehiclelocation.html" class="tsd-signature-type">IVehicleLocation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/f448446/src/vehicle-locations.ts#L28">vehicle-locations.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/13e7d95/src/vehicle-locations.ts#L28">vehicle-locations.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,6 +235,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iroute.html" class="tsd-kind-icon">IRoute</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isettings.html" class="tsd-kind-icon">ISettings</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/istopinfo.html" class="tsd-kind-icon">IStop<wbr>Info</a>
@@ -168,6 +271,33 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iwaypoint.html" class="tsd-kind-icon">IWay<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#actualdeparture" class="tsd-kind-icon">Actual<wbr>Departure</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
+						<a href="globals.html#anycombination" class="tsd-kind-icon">Any<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#countrycodes" class="tsd-kind-icon">Country<wbr>Codes</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#departeddeparture" class="tsd-kind-icon">Departed<wbr>Departure</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#iactualtrippassage" class="tsd-kind-icon">IActual<wbr>Trip<wbr>Passage</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#idepartedtrippassage" class="tsd-kind-icon">IDeparted<wbr>Trip<wbr>Passage</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#omit" class="tsd-kind-icon">Omit</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#vehicle_status" class="tsd-kind-icon">VEHICLE_<wbr>STATUS</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
+						<a href="globals.html#valuesof" class="tsd-kind-icon">Values<wbr>Of</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#vehiclelocations" class="tsd-kind-icon">Vehicle<wbr>Locations</a>
