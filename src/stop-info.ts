@@ -1,3 +1,5 @@
+import { VEHICLE_STATUS } from "./vehicle-status";
+
 export interface IDeparture {
     actualRelativeTime: number;
     actualTime: string;
@@ -7,10 +9,15 @@ export interface IDeparture {
     patternText: string;
     plannedTime: string;
     routeId: string;
-    status: string | "PREDICTED" | "DEPARTED" | "STOPPING";
+    status: VEHICLE_STATUS;
     tripId: string;
     vehicleId: string;
 }
+
+
+type DepartedDeparture = Omit<IDeparture, "status"> & { status: "DEPARTED" };
+type ActualDeparture = Omit<IDeparture, "status"> & { status: string | "PREDICTED" | "DEPARTED" | "STOPPING" };
+
 export interface IRoute {
     alerts: any[];
     authority: string;
@@ -21,12 +28,12 @@ export interface IRoute {
     shortName: string;
 }
 export interface IStopInfo {
-    actual: IDeparture[];
+    actual: ActualDeparture[];
     directions: any[];
     firstPassageTime: number;
     generalAlerts: any[];
     lastPassageTime: number;
-    old: IDeparture[];
+    old: DepartedDeparture[];
     routes: IRoute[];
     stopName: string;
     stopShortName: string;
