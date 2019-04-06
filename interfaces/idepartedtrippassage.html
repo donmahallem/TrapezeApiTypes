@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ETripId | @donmahallem/trapeze-api-types</title>
+	<title>IDepartedTripPassage | @donmahallem/trapeze-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,16 +56,106 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="etripid.html">ETripId</a>
+					<a href="idepartedtrippassage.html">IDepartedTripPassage</a>
 				</li>
 			</ul>
-			<h1>Enumeration ETripId</h1>
+			<h1>Interface IDepartedTripPassage</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="itrippassage.html" class="tsd-signature-type">ITripPassage</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IDepartedTripPassage</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="idepartedtrippassage.html#actualtime" class="tsd-kind-icon">actual<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="idepartedtrippassage.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="idepartedtrippassage.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="idepartedtrippassage.html#stop_seq_num" class="tsd-kind-icon">stop_<wbr>seq_<wbr>num</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="actualtime" class="tsd-anchor"></a>
+					<h3>actual<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">actual<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="itrippassage.html">ITripPassage</a>.<a href="itrippassage.html#actualtime">actualTime</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/cb3825c/src/trip-passages.ts#L5">trip-passages.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/vehicle_status.html#departed" class="tsd-signature-type">DEPARTED</a></div>
+					<aside class="tsd-sources">
+						<p>Overrides <a href="itrippassage.html">ITripPassage</a>.<a href="itrippassage.html#status">status</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/cb3825c/src/trip-passages.ts#L16">trip-passages.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="stop" class="tsd-anchor"></a>
+					<h3>stop</h3>
+					<div class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="itrippassage.html">ITripPassage</a>.<a href="itrippassage.html#stop">stop</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/cb3825c/src/trip-passages.ts#L7">trip-passages.ts:7</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><a href="../globals.html#stopid" class="tsd-signature-type">StopId</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>short<wbr>Name<span class="tsd-signature-symbol">: </span><a href="../globals.html#stopshortname" class="tsd-signature-type">StopShortName</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="stop_seq_num" class="tsd-anchor"></a>
+					<h3>stop_<wbr>seq_<wbr>num</h3>
+					<div class="tsd-signature tsd-kind-icon">stop_<wbr>seq_<wbr>num<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="itrippassage.html">ITripPassage</a>.<a href="itrippassage.html#stop_seq_num">stop_seq_num</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/cb3825c/src/trip-passages.ts#L12">trip-passages.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -77,99 +167,92 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-is-not-exported">
-						<a href="erouteid.html" class="tsd-kind-icon">ERoute<wbr>Id</a>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/vehicle_status.html" class="tsd-kind-icon">VEHICLE_<wbr>STATUS</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-is-not-exported">
-						<a href="estopid.html" class="tsd-kind-icon">EStop<wbr>Id</a>
+					<li class=" tsd-kind-interface">
+						<a href="iactualdeparture.html" class="tsd-kind-icon">IActual<wbr>Departure</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-is-not-exported">
-						<a href="estopshortname.html" class="tsd-kind-icon">EStop<wbr>Short<wbr>Name</a>
+					<li class=" tsd-kind-interface">
+						<a href="iactualtrippassage.html" class="tsd-kind-icon">IActual<wbr>Trip<wbr>Passage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ibasevehiclelocation.html" class="tsd-kind-icon">IBase<wbr>Vehicle<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ideletedvehiclelocation.html" class="tsd-kind-icon">IDeleted<wbr>Vehicle<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ideparteddeparture.html" class="tsd-kind-icon">IDeparted<wbr>Departure</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-is-not-exported">
-						<a href="etripid.html" class="tsd-kind-icon">ETrip<wbr>Id</a>
+					<li class="current tsd-kind-interface">
+						<a href="idepartedtrippassage.html" class="tsd-kind-icon">IDeparted<wbr>Trip<wbr>Passage</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="idepartedtrippassage.html#actualtime" class="tsd-kind-icon">actual<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+								<a href="idepartedtrippassage.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="idepartedtrippassage.html#stop" class="tsd-kind-icon">stop</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="idepartedtrippassage.html#stop_seq_num" class="tsd-kind-icon">stop_<wbr>seq_<wbr>num</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum tsd-is-not-exported">
-						<a href="evehicleid.html" class="tsd-kind-icon">EVehicle<wbr>Id</a>
+					<li class=" tsd-kind-interface">
+						<a href="ideparture.html" class="tsd-kind-icon">IDeparture</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ibasevehiclelocation.html" class="tsd-kind-icon">IBase<wbr>Vehicle<wbr>Location</a>
+						<a href="ipathsegment.html" class="tsd-kind-icon">IPath<wbr>Segment</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ideletedvehiclelocation.html" class="tsd-kind-icon">IDeleted<wbr>Vehicle<wbr>Location</a>
+						<a href="iroute.html" class="tsd-kind-icon">IRoute</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ideparture.html" class="tsd-kind-icon">IDeparture</a>
+						<a href="isettings.html" class="tsd-kind-icon">ISettings</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ipathsegment.html" class="tsd-kind-icon">IPath<wbr>Segment</a>
+						<a href="istopinfo.html" class="tsd-kind-icon">IStop<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iroute.html" class="tsd-kind-icon">IRoute</a>
+						<a href="istoppassage.html" class="tsd-kind-icon">IStop<wbr>Passage</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/isettings.html" class="tsd-kind-icon">ISettings</a>
+						<a href="itrippassage.html" class="tsd-kind-icon">ITrip<wbr>Passage</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/istopinfo.html" class="tsd-kind-icon">IStop<wbr>Info</a>
+						<a href="itrippassages.html" class="tsd-kind-icon">ITrip<wbr>Passages</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/istoppassage.html" class="tsd-kind-icon">IStop<wbr>Passage</a>
+						<a href="itriproute.html" class="tsd-kind-icon">ITrip<wbr>Route</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itrippassage.html" class="tsd-kind-icon">ITrip<wbr>Passage</a>
+						<a href="itriproutepath.html" class="tsd-kind-icon">ITrip<wbr>Route<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itrippassages.html" class="tsd-kind-icon">ITrip<wbr>Passages</a>
+						<a href="itriproutepathpoint.html" class="tsd-kind-icon">ITrip<wbr>Route<wbr>Path<wbr>Point</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itriproute.html" class="tsd-kind-icon">ITrip<wbr>Route</a>
+						<a href="ivehiclelocation.html" class="tsd-kind-icon">IVehicle<wbr>Location</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itriproutepath.html" class="tsd-kind-icon">ITrip<wbr>Route<wbr>Path</a>
+						<a href="ivehiclelocationlist.html" class="tsd-kind-icon">IVehicle<wbr>Location<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itriproutepathpoint.html" class="tsd-kind-icon">ITrip<wbr>Route<wbr>Path<wbr>Point</a>
+						<a href="ivehiclepath.html" class="tsd-kind-icon">IVehicle<wbr>Path</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ivehiclelocation.html" class="tsd-kind-icon">IVehicle<wbr>Location</a>
+						<a href="ivehiclepathinfo.html" class="tsd-kind-icon">IVehicle<wbr>Path<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ivehiclelocationlist.html" class="tsd-kind-icon">IVehicle<wbr>Location<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ivehiclepath.html" class="tsd-kind-icon">IVehicle<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ivehiclepathinfo.html" class="tsd-kind-icon">IVehicle<wbr>Path<wbr>Info</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iwaypoint.html" class="tsd-kind-icon">IWay<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported">
-						<a href="../globals.html#actualdeparture" class="tsd-kind-icon">Actual<wbr>Departure</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../globals.html#anycombination" class="tsd-kind-icon">Any<wbr>Combination</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported">
-						<a href="../globals.html#countrycodes" class="tsd-kind-icon">Country<wbr>Codes</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported">
-						<a href="../globals.html#departeddeparture" class="tsd-kind-icon">Departed<wbr>Departure</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported">
-						<a href="../globals.html#iactualtrippassage" class="tsd-kind-icon">IActual<wbr>Trip<wbr>Passage</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported">
-						<a href="../globals.html#idepartedtrippassage" class="tsd-kind-icon">IDeparted<wbr>Trip<wbr>Passage</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../globals.html#omit" class="tsd-kind-icon">Omit</a>
+						<a href="iwaypoint.html" class="tsd-kind-icon">IWay<wbr>Point</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#routeid" class="tsd-kind-icon">Route<wbr>Id</a>
@@ -182,12 +265,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#tripid" class="tsd-kind-icon">Trip<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#vehicle_status" class="tsd-kind-icon">VEHICLE_<wbr>STATUS</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../globals.html#valuesof" class="tsd-kind-icon">Values<wbr>Of</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#vehicleid" class="tsd-kind-icon">Vehicle<wbr>Id</a>
