@@ -1,6 +1,9 @@
+import { Omit } from "./type-util";
+import { VEHICLE_STATUS } from "./vehicle-status";
+
 export interface ITripPassage {
     actualTime: string;
-    status: string | "PREDICTED" | "DEPARTED" | "STOPPING";
+    status: VEHICLE_STATUS;
     stop: {
         id: string;
         name: string;
@@ -8,9 +11,13 @@ export interface ITripPassage {
     };
     stop_seq_num: string;
 }
+
+type IDepartedTripPassage = Omit<ITripPassage, "status"> & { status: "DEPARTED" };
+type IActualTripPassage = Omit<ITripPassage, "status"> & { status: string | "PREDICTED" | "DEPARTED" | "STOPPING" };
+
 export interface ITripPassages {
-    actual: ITripPassage[];
-    old: ITripPassage[];
+    actual: IActualTripPassage[];
+    old: IDepartedTripPassage[];
     directionText: string;
     routeName: string;
 }

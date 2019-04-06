@@ -1,0 +1,1 @@
+export type VEHICLE_STATUS = string | "PREDICTED" | "DEPARTED" | "STOPPING" | "PLANNED";
