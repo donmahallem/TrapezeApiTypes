@@ -6,3 +6,4 @@ export * from "./stop-passage";
 export * from "./settings";
 export * from "./trip-route";
 export * from "./type-util";
+export * from "./stop-locations";
