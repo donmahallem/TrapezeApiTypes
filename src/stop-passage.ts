@@ -1,4 +1,4 @@
-import { Omit } from "./type-util";
+import { Omit, RouteId } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface IDeparture {
@@ -22,7 +22,7 @@ export interface IRoute {
     alerts: any[];
     authority: string;
     directions: string[];
-    id: string;
+    id: RouteId;
     name: string;
     routeType: string;
     shortName: string;

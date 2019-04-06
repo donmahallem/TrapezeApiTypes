@@ -1,3 +1,5 @@
+import { TripId } from "./type-util";
+
 export interface IBaseVehicleLocation {
     id: string;
 }
@@ -22,7 +24,7 @@ export interface IVehicleLocation extends IBaseVehicleLocation {
     longitude: number;
     name: string;
     path: IPathSegment[];
-    tripId: string;
+    tripId: TripId;
 }
 
 export type VehicleLocations = IDeletedVehicleLocation | IVehicleLocation;
