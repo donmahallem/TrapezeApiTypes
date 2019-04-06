@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ITripPassages | @donmahallem/trapeze-api-types</title>
+	<title>IStopLocation | @donmahallem/trapeze-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="itrippassages.html">ITripPassages</a>
+					<a href="istoplocation.html">IStopLocation</a>
 				</li>
 			</ul>
-			<h1>Interface ITripPassages</h1>
+			<h1>Interface IStopLocation</h1>
 		</div>
 	</div>
 </header>
@@ -68,13 +68,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Response from:</p>
-						<pre><code><span class="hljs-keyword">end</span>/asdf</code></pre>
-					</div>
 					<dl class="tsd-comment-tags">
 						<dt>since</dt>
-						<dd><p>0.5.0</p>
+						<dd><p>1.1.0</p>
 						</dd>
 					</dl>
 				</div>
@@ -83,7 +79,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ITripPassages</span>
+						<span class="target">IStopLocation</span>
 					</li>
 				</ul>
 			</section>
@@ -94,10 +90,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itrippassages.html#actual" class="tsd-kind-icon">actual</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itrippassages.html#directiontext" class="tsd-kind-icon">direction<wbr>Text</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itrippassages.html#old" class="tsd-kind-icon">old</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itrippassages.html#routename" class="tsd-kind-icon">route<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#category" class="tsd-kind-icon">category</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#latitude" class="tsd-kind-icon">latitude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#longitude" class="tsd-kind-icon">longitude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoplocation.html#shortname" class="tsd-kind-icon">short<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,42 +104,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="actual" class="tsd-anchor"></a>
-					<h3>actual</h3>
-					<div class="tsd-signature tsd-kind-icon">actual<span class="tsd-signature-symbol">:</span> <a href="iactualtrippassage.html" class="tsd-signature-type">IActualTripPassage</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="category" class="tsd-anchor"></a>
+					<h3>category</h3>
+					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bus"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/trip-passages.ts#L29">trip-passages.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L7">stop-locations.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="directiontext" class="tsd-anchor"></a>
-					<h3>direction<wbr>Text</h3>
-					<div class="tsd-signature tsd-kind-icon">direction<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="../globals.html#stopid" class="tsd-signature-type">StopId</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/trip-passages.ts#L31">trip-passages.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L8">stop-locations.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="old" class="tsd-anchor"></a>
-					<h3>old</h3>
-					<div class="tsd-signature tsd-kind-icon">old<span class="tsd-signature-symbol">:</span> <a href="idepartedtrippassage.html" class="tsd-signature-type">IDepartedTripPassage</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="latitude" class="tsd-anchor"></a>
+					<h3>latitude</h3>
+					<div class="tsd-signature tsd-kind-icon">latitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/trip-passages.ts#L30">trip-passages.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L9">stop-locations.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="routename" class="tsd-anchor"></a>
-					<h3>route<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">route<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="longitude" class="tsd-anchor"></a>
+					<h3>longitude</h3>
+					<div class="tsd-signature tsd-kind-icon">longitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/trip-passages.ts#L32">trip-passages.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L10">stop-locations.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L11">stop-locations.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="shortname" class="tsd-anchor"></a>
+					<h3>short<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">short<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="../globals.html#stopshortname" class="tsd-signature-type">StopShortName</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/23c76cd/src/stop-locations.ts#L12">stop-locations.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -193,9 +211,33 @@
 					<li class=" tsd-kind-interface">
 						<a href="istopinfo.html" class="tsd-kind-icon">IStop<wbr>Info</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="istoplocation.html" class="tsd-kind-icon">IStop<wbr>Location</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#category" class="tsd-kind-icon">category</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#latitude" class="tsd-kind-icon">latitude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#longitude" class="tsd-kind-icon">longitude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoplocation.html#shortname" class="tsd-kind-icon">short<wbr>Name</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="istoplocations.html" class="tsd-kind-icon">IStop<wbr>Locations</a>
 					</li>
@@ -205,27 +247,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="itrippassage.html" class="tsd-kind-icon">ITrip<wbr>Passage</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="itrippassages.html" class="tsd-kind-icon">ITrip<wbr>Passages</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itrippassages.html#actual" class="tsd-kind-icon">actual</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itrippassages.html#directiontext" class="tsd-kind-icon">direction<wbr>Text</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itrippassages.html#old" class="tsd-kind-icon">old</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="itrippassages.html#routename" class="tsd-kind-icon">route<wbr>Name</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="itriproute.html" class="tsd-kind-icon">ITrip<wbr>Route</a>
 					</li>
