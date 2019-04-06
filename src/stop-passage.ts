@@ -1,4 +1,4 @@
-import { Omit, RouteId, StopShortName } from "./type-util";
+import { RouteId, StopShortName } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface IDeparture {
@@ -15,8 +15,12 @@ export interface IDeparture {
     vehicleId: string;
 }
 
-type DepartedDeparture = Omit<IDeparture, "status"> & { status: "DEPARTED" };
-type ActualDeparture = Omit<IDeparture, "status"> & { status: string | "PREDICTED" | "DEPARTED" | "STOPPING" };
+export interface IDepartedDeparture extends IDeparture {
+    status: VEHICLE_STATUS.DEPARTED;
+}
+export interface IActualDeparture extends IDeparture {
+    status: VEHICLE_STATUS.PREDICTED | VEHICLE_STATUS.PLANNED | VEHICLE_STATUS.STOPPING;
+}
 
 export interface IRoute {
     alerts: any[];
@@ -28,13 +32,16 @@ export interface IRoute {
     // route short name
     shortName: string;
 }
+/**
+ * @since 0.5.0
+ */
 export interface IStopPassage {
-    actual: ActualDeparture[];
+    actual: IActualDeparture[];
     directions: any[];
     firstPassageTime: number;
     generalAlerts: any[];
     lastPassageTime: number;
-    old: DepartedDeparture[];
+    old: IDepartedDeparture[];
     routes: IRoute[];
     stopName: string;
     stopShortName: StopShortName;

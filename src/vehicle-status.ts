@@ -1,1 +1,10 @@
-export type VEHICLE_STATUS = string | "PREDICTED" | "DEPARTED" | "STOPPING" | "PLANNED";
+/**
+ * Vehicle status
+ * @since 1.0.0
+ */
+export enum VEHICLE_STATUS {
+    PREDICTED = "PREDICTED",
+    DEPARTED = "DEPARTED",
+    STOPPING = "STOPPING",
+    PLANNED = "PLANNED",
+}

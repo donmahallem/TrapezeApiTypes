@@ -1,4 +1,4 @@
-import { Omit, StopId, StopShortName } from "./type-util";
+import { StopId, StopShortName } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface ITripPassage {
@@ -12,9 +12,19 @@ export interface ITripPassage {
     stop_seq_num: string;
 }
 
-type IDepartedTripPassage = Omit<ITripPassage, "status"> & { status: "DEPARTED" };
-type IActualTripPassage = Omit<ITripPassage, "status"> & { status: string | "PREDICTED" | "PLANNED" | "STOPPING" };
-
+export interface IDepartedTripPassage extends ITripPassage {
+    status: VEHICLE_STATUS.DEPARTED;
+}
+export interface IActualTripPassage extends ITripPassage {
+    status: VEHICLE_STATUS.PLANNED | VEHICLE_STATUS.PREDICTED | VEHICLE_STATUS.STOPPING;
+}
+/**
+ * Response from:
+ * ```
+ * end/asdf
+ * ```
+ * @since 0.5.0
+ */
 export interface ITripPassages {
     actual: IActualTripPassage[];
     old: IDepartedTripPassage[];

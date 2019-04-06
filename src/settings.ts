@@ -1,3 +1,7 @@
+
+/**
+ * @hidden
+ */
 type CountryCodes = ["ab", "aa", "af", "sq", "am", "ar", "hy", "as", "ay", "az",
     "ba", "eu", "bn", "dz", "bh", "bi", "br", "bg", "my", "be", "km", "ca", "zh", "co", "hr", "cs",
     "da", "nl", "en", "eo", "et", "fo", "fj", "fi", "fr", "fy", "gd", "gl", "ka", "de", "el", "kl",
@@ -7,8 +11,17 @@ type CountryCodes = ["ab", "aa", "af", "sq", "am", "ar", "hy", "as", "ay", "az",
     "qu", "rm", "ro", "ru", "sm", "sg", "sa", "sr", "sh", "st", "tn", "sn", "sd", "si", "ss", "sk",
     "sl", "so", "es", "su", "sw", "sv", "tl", "tg", "ta", "tt", "te", "th", "bo", "ti", "to", "ts",
     "tr", "tk", "tw", "uk", "ur", "uz", "vi", "vo", "cy", "wo", "xh", "ji", "yo", "zu"];
+/**
+ * @hidden
+ */
 type ValuesOf<T extends CountryCodes> = T[number];
+/**
+ * @hidden
+ */
 type AnyCombination<T extends CountryCodes> = Array<T[keyof T]>;
+/**
+ * @since 0.5.0
+ */
 export interface ISettings {
     /**
      * eg. de en ar
