@@ -1,4 +1,4 @@
-import { StopId, StopShortName } from "./type-util";
+import { StopId, StopShortName, TripId } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
 export interface ITripPassage {
@@ -30,4 +30,9 @@ export interface ITripPassages {
     old: IDepartedTripPassage[];
     directionText: string;
     routeName: string;
+    /**
+     * The trip id
+     * @since 1.2.0
+     */
+    tripId: TripId;
 }
