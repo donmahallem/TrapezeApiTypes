@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/TrapezeApiTypes
+ */
+
 import { TripId, VehicleId } from "./type-util";
 
 export interface IBaseVehicleLocation {

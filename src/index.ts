@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/TrapezeApiTypes
+ */
+
 export * from "./vehicle-locations";
 export * from "./vehicle-path-info";
 export * from "./trip-passages";

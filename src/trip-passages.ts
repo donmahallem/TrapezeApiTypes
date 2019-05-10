@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/TrapezeApiTypes
+ */
+
 import { StopId, StopShortName, TripId } from "./type-util";
 import { VEHICLE_STATUS } from "./vehicle-status";
 
