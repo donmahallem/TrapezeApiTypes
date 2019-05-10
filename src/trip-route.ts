@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/TrapezeApiTypes
+ */
+
 /**
  * Response from /trip/{tripId}/route
  */
