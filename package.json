@@ -23,7 +23,9 @@
         "test:lint": "npm run lint",
         "test:build": "npm run build",
         "test:unit": "npm run test-ci",
-        "test:docs": "npm run docs"
+        "test:docs": "npm run docs",
+        "create-schemas": "typescript-json-schema --out ./src/config-schema.json ./tsconfig-schemas.json IServerConfig --include ./src/config.ts --required true",
+        "prepublishOnly": "npm run create-schemas"
     },
     "homepage": "https://donmahallem.github.io/TrapezeApiTypes/",
     "author": {
@@ -71,7 +73,8 @@
         "ts-node": "^8.1.0",
         "tslint": "^5.16.0",
         "typedoc": "^0.14.2",
-        "typescript": "^3.4.5"
+        "typescript": "^3.4.5",
+        "typescript-json-schema": "^0.37.0"
     },
     "nyc": {
         "include": [
