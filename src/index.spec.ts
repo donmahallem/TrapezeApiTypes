@@ -8,6 +8,6 @@ import * as index from "./index";
 
 describe("index", () => {
     it("should contain FlowApiValidator", () => {
-        expect(true).to.equal(true);
+        expect(index).to.not.be.undefined;
     });
 });
