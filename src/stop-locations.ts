@@ -15,7 +15,7 @@ export interface IStopLocation {
      */
     category: string | "bus";
     /**
-     * Stop Id 
+     * Stop Id
      */
     id: StopId;
     /**
