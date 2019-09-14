@@ -5,7 +5,9 @@
 import { StopId, StopShortName } from "./type-util";
 
 /**
+ * Information about the stop location
  * @since 1.1.0
+ * @category Cat1
  */
 export interface IStopLocation {
     /**
@@ -40,10 +42,11 @@ export interface IStopLocation {
  * /internetservice/geoserviceDispatcher/services/stopinfo/stops
  * ```
  * @since 1.1.0
+ * @category Cat2
  */
 export interface IStopLocations {
     /**
-     * reported locations
+     * List of StopLocation
      */
     stops: IStopLocation[];
 }
