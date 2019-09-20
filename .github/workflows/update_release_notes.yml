@@ -1,4 +1,6 @@
-on: [release]
+on:
+  release:
+    types: ['created']
 
 jobs:
   create_release_notes:
@@ -16,6 +18,6 @@ jobs:
           npm install github-release-notes -g
       - name: Run Gren
         run: |
-          gren release --override --token=$GITHUB_TOKEN --data-source=prs --config=.grenrc.json
+          gren release --override --token=$GITHUB_TOKEN --data-source=prs --config=./.github/.grenrc.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
