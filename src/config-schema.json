@@ -1,0 +1,78 @@
+{
+    "$ref": "#/definitions/IStopLocations",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "EStopId": {
+        },
+        "EStopShortName": {
+        },
+        "IStopLocation": {
+            "properties": {
+                "category": {
+                    "type": "string"
+                },
+                "id": {
+                    "$ref": "#/definitions/StopId"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "shortName": {
+                    "$ref": "#/definitions/StopShortName"
+                }
+            },
+            "required": [
+                "category",
+                "id",
+                "latitude",
+                "longitude",
+                "name",
+                "shortName"
+            ],
+            "type": "object"
+        },
+        "IStopLocations": {
+            "description": "Response for\n```\n * /internetservice/geoserviceDispatcher/services/stopinfo/stops\n * ```",
+            "properties": {
+                "stops": {
+                    "description": "reported locations",
+                    "items": {
+                        "$ref": "#/definitions/IStopLocation"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "stops"
+            ],
+            "type": "object"
+        },
+        "StopId": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/EStopId"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "StopShortName": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/EStopShortName"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}
+

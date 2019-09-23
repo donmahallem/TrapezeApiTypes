@@ -24,7 +24,7 @@
         "test:build": "npm run build",
         "test:unit": "npm run test-ci",
         "test:docs": "npm run docs",
-        "create-schemas": "typescript-json-schema --out ./src/config-schema.json ./tsconfig-schemas.json IServerConfig --include ./src/config.ts --required true",
+        "create-schemas": "typescript-json-schema --out ./src/config-schema.json ./tsconfig-schemas.json IStopLocations --include ./src/**/*.ts --required true --aliasRefs true --topRef",
         "prepublishOnly": "npm run create-schemas"
     },
     "homepage": "https://donmahallem.github.io/TrapezeApiTypes/",
