@@ -14,5 +14,5 @@ export interface IVehiclePath {
 }
 
 export interface IVehiclePathInfo {
-    paths: IVehiclePath;
+    paths: IVehiclePath[];
 }
