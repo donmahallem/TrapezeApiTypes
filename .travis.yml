@@ -42,6 +42,7 @@ jobs:
       cleanup: false
       email: $npm_email
       api_token: $npm_api_key
+      access: public
       on:
         tags: true
         repo: donmahallem/TrapezeApiTypes
