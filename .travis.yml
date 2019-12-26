@@ -36,6 +36,7 @@ jobs:
     node_js: 'stable'
     script: npm run build
     if: tag IS present
+    deploy:
       provider: npm
       edge: true
       cleanup: false
