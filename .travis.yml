@@ -5,15 +5,14 @@ node_js:
   - "10"
   - "stable"
 env:
+  global:
+  - COVERALLS_PARALLEL=true
   jobs:
   - TEST_SUITE=lint
   - TEST_SUITE=build
   - TEST_SUITE=unit
   - TEST_SUITE=docs
-cache:
-  directories:
-  - node_modules
-  - "$(npm config get prefix)/node_modules"
+cache: npm
 script:
 - npm run test:$TEST_SUITE
 after_success:
@@ -37,8 +36,8 @@ jobs:
     node_js: 'stable'
     script: npm run build
     if: tag IS present
-    deploy:
       provider: npm
+      edge: true
       cleanup: false
       email: $npm_email
       api_token: $npm_api_key
@@ -51,9 +50,11 @@ jobs:
     if: branch = master
     deploy:
       provider: pages
-      cleanup: false
+      skip_cleanup: true
       local_dir: docs
       token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       keep_history: true
       on:
         branch: master
+notifications:
+  webhooks: https://coveralls.io/webhook
