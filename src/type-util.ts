@@ -50,3 +50,4 @@ enum EVehicleId { }
  * @since 0.5.0
  */
 export type VehicleId = EVehicleId & string;
+export type VehicleCategory = string | "bus" | "tram";
