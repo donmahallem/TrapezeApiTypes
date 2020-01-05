@@ -47,7 +47,7 @@ export interface IStopPointLocation {
 /**
  * Response for
  * ```
- * /internetservice/geoserviceDispatcher/services/stopinfo/stops
+ * /internetservice/geoserviceDispatcher/services/stopinfo/stopPoints
  * ```
  * @since 2.0.0
  * @category Cat2
