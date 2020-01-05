@@ -29,6 +29,14 @@ export type StopId = EStopId & string;
 /**
  * @hidden
  */
+enum EStopPointId { }
+/**
+ * @since 2.0.0
+ */
+export type StopPointId = EStopPointId & string;
+/**
+ * @hidden
+ */
 enum EStopShortName { }
 /**
  * @since 0.5.0
@@ -42,3 +50,4 @@ enum EVehicleId { }
  * @since 0.5.0
  */
 export type VehicleId = EVehicleId & string;
+export type VehicleCategory = string | "bus" | "tram";
