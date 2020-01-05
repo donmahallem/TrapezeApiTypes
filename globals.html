@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@donmahallem/trapeze-api-types</title>
+	<title>@donmahallem/trapeze-api-types - v2.0.0</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@donmahallem/trapeze-api-types</a>
+					<a href="index.html" class="title">@donmahallem/trapeze-api-types - v2.0.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> @donmahallem/trapeze-api-types</h1>
+			<h1> @donmahallem/trapeze-api-types - v2.0.0</h1>
 		</div>
 	</div>
 </header>
@@ -77,10 +77,12 @@
 							<h3>Cat1 Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/istoplocation.html" class="tsd-kind-icon">IStop<wbr>Location</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/istoppointlocation.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Location</a></li>
 							</ul>
 							<h3>Cat2 Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/istoplocations.html" class="tsd-kind-icon">IStop<wbr>Locations</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/istoppointlocations.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Locations</a></li>
 							</ul>
 							<h3>Other Interfaces</h3>
 							<ul class="tsd-index-list">
@@ -113,8 +115,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="globals.html#routeid" class="tsd-kind-icon">Route<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#stopid" class="tsd-kind-icon">Stop<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#stoppointid" class="tsd-kind-icon">Stop<wbr>Point<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#stopshortname" class="tsd-kind-icon">Stop<wbr>Short<wbr>Name</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#tripid" class="tsd-kind-icon">Trip<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#vehiclecategory" class="tsd-kind-icon">Vehicle<wbr>Category</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#vehicleid" class="tsd-kind-icon">Vehicle<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#vehiclelocations" class="tsd-kind-icon">Vehicle<wbr>Locations</a></li>
 							</ul>
@@ -130,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">Route<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ERouteId</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/type-util.ts#L12">type-util.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L12">type-util.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">Stop<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EStopId</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/type-util.ts#L28">type-util.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L28">type-util.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,12 +163,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="stoppointid" class="tsd-anchor"></a>
+					<h3>Stop<wbr>Point<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Stop<wbr>Point<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EStopPointId</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L36">type-util.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>since</dt>
+							<dd><p>2.0.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="stopshortname" class="tsd-anchor"></a>
 					<h3>Stop<wbr>Short<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">Stop<wbr>Short<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EStopShortName</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/type-util.ts#L36">type-util.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L44">type-util.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">Trip<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ETripId</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/type-util.ts#L20">type-util.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L20">type-util.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,12 +214,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="vehiclecategory" class="tsd-anchor"></a>
+					<h3>Vehicle<wbr>Category</h3>
+					<div class="tsd-signature tsd-kind-icon">Vehicle<wbr>Category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bus"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"tram"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L53">type-util.ts:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="vehicleid" class="tsd-anchor"></a>
 					<h3>Vehicle<wbr>Id</h3>
 					<div class="tsd-signature tsd-kind-icon">Vehicle<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EVehicleId</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/type-util.ts#L44">type-util.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/type-util.ts#L52">type-util.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">Vehicle<wbr>Locations<span class="tsd-signature-symbol">:</span> <a href="interfaces/ideletedvehiclelocation.html" class="tsd-signature-type">IDeletedVehicleLocation</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/ivehiclelocation.html" class="tsd-signature-type">IVehicleLocation</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/8f4de3e/src/vehicle-locations.ts#L92">vehicle-locations.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/5f0ffa7/src/vehicle-locations.ts#L92">vehicle-locations.ts:92</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -277,6 +308,12 @@
 						<a href="interfaces/istoppassage.html" class="tsd-kind-icon">IStop<wbr>Passage</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/istoppointlocation.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/istoppointlocations.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Locations</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/itrippassage.html" class="tsd-kind-icon">ITrip<wbr>Passage</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -313,10 +350,16 @@
 						<a href="globals.html#stopid" class="tsd-kind-icon">Stop<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#stoppointid" class="tsd-kind-icon">Stop<wbr>Point<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#stopshortname" class="tsd-kind-icon">Stop<wbr>Short<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#tripid" class="tsd-kind-icon">Trip<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#vehiclecategory" class="tsd-kind-icon">Vehicle<wbr>Category</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#vehicleid" class="tsd-kind-icon">Vehicle<wbr>Id</a>
