@@ -21,7 +21,7 @@ type ValuesOf<T extends CountryCodes> = T[number];
 /**
  * @hidden
  */
-type AnyCombination<T extends CountryCodes> = Array<T[keyof T]>;
+type AnyCombination<T extends CountryCodes> = T[keyof T][];
 /**
  * @since 0.5.0
  */
