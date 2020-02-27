@@ -2,7 +2,7 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { TripId, VehicleId } from "./type-util";
+import { TripId, VehicleId } from './type-util';
 
 /**
  * Base Vehicle Location.
@@ -61,7 +61,7 @@ export interface IVehicleLocation extends IBaseVehicleLocation {
     /**
      * Kind of Vehicle
      */
-    category: string | "bus" | "tram";
+    category: string | 'bus' | 'tram';
     color: string;
     /**
      * Heading of the vehicle in degrees
