@@ -2,7 +2,7 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { StopPointId, StopShortName, VehicleCategory } from "./type-util";
+import { StopPointId, StopShortName, VehicleCategory } from './type-util';
 
 /**
  * Information about the stop location

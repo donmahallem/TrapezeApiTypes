@@ -2,8 +2,8 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { RouteId, StopShortName } from "./type-util";
-import { VEHICLE_STATUS } from "./vehicle-status";
+import { RouteId, StopShortName } from './type-util';
+import { VEHICLE_STATUS } from './vehicle-status';
 
 /**
  * Departure information for vehicles
@@ -56,7 +56,7 @@ export interface IRoute {
     directions: string[];
     id: RouteId;
     name: string;
-    routeType: string | "bus";
+    routeType: string | 'bus';
     // route short name
     shortName: string;
 }
