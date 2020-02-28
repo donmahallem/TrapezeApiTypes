@@ -9,12 +9,18 @@ syntax = "proto3";
  * @since 1.0.0
  */
 message Settings{
+    /**
+     * Two letter country codes
+     */
     repeated string AVAILABLE_LANGUAGES = 1;
     int32 DEFAULT_TIME_PREVIEW = 2;
     bool GEOLOCATION_ENABLED = 3;
     int64 INITIAL_LAT = 4;
     int64 INITIAL_LON = 5;
     int32 INITIAL_ZOOM = 6;
+    /**
+     * Two letter country code
+     */
     string LANGUAGE = 7;
     bool MAP_ENABLED = 8;
     bool MAP_SHOW_CONTROLS = 9;
