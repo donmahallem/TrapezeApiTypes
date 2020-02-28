@@ -2,8 +2,6 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { StopId, StopShortName } from './type-util';
-
 /**
  * Information about the stop location
  * @since 1.1.0
@@ -17,7 +15,7 @@ export interface IStopLocation {
     /**
      * Stop Id
      */
-    id: StopId;
+    id: string;
     /**
      * Latitude in arcmiliseconds
      */
@@ -33,7 +31,7 @@ export interface IStopLocation {
     /**
      * Stop short id
      */
-    shortName: StopShortName;
+    shortName: string;
 }
 
 /**

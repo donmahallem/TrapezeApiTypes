@@ -2,16 +2,15 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { StopId, StopShortName } from './type-util';
 import { VEHICLE_STATUS } from './vehicle-status';
 
 export interface ITripPassage {
     actualTime: string;
     status: VEHICLE_STATUS;
     stop: {
-        id: StopId;
+        id: string;
         name: string;
-        shortName: StopShortName;
+        shortName: string;
     };
     stop_seq_num: string;
 }
