@@ -48,10 +48,19 @@ export interface IActualDeparture extends IDeparture {
 }
 
 /**
+ * Alerts on route
+ */
+export interface IRouteAlert {
+    direction: string[];
+    directionId: string;
+    title: string;
+}
+
+/**
  * Route of the vehicle
  */
 export interface IRoute {
-    alerts: any[];
+    alerts: IRouteAlert[];
     authority: string;
     directions: string[];
     id: RouteId;
