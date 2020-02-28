@@ -2,8 +2,8 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { StopId, StopShortName } from "./type-util";
-import { VEHICLE_STATUS } from "./vehicle-status";
+import { StopId, StopShortName } from './type-util';
+import { VEHICLE_STATUS } from './vehicle-status';
 
 export interface ITripPassage {
     actualTime: string;
