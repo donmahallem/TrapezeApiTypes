@@ -24,7 +24,9 @@
         "test:build": "npm run build",
         "test:unit": "npm run test-ci",
         "test:docs": "npm run docs",
-        "build:proto": "pbjs -t static-module -w commonjs --force-number -o ./src/models/protos.js ./proto/test.proto && pbts -o ./src/models/protos.d.ts ./src/models/protos.js"
+        "build:proto:pbjs": "pbjs -t static-module -w commonjs --force-number -o ./src/protos.js ./proto/*.proto",
+        "build:proto:pbts": "pbts -o ./src/protos.d.ts ./src/protos.js",
+        "build:proto": "npm run build:proto:pbjs && npm run build:proto:pbts"
     },
     "homepage": "https://donmahallem.github.io/TrapezeApiTypes/",
     "author": {
