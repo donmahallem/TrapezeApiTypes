@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IBaseVehicleLocation | @donmahallem/trapeze-api-types</title>
+	<title>IStopPointInfo | @donmahallem/trapeze-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,37 +56,21 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ibasevehiclelocation.html">IBaseVehicleLocation</a>
+					<a href="istoppointinfo.html">IStopPointInfo</a>
 				</li>
 			</ul>
-			<h1>Interface IBaseVehicleLocation</h1>
+			<h1>Interface IStopPointInfo</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Base Vehicle Location.
-						Should only be used as generic for its child implementations</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IBaseVehicleLocation</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="ideletedvehiclelocation.html" class="tsd-signature-type">IDeletedVehicleLocation</a>
-							</li>
-							<li>
-								<a href="ivehiclelocation.html" class="tsd-signature-type">IVehicleLocation</a>
-							</li>
-						</ul>
+						<span class="target">IStopPointInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -97,7 +81,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibasevehiclelocation.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoppointinfo.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoppointinfo.html#passengername" class="tsd-kind-icon">passenger<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istoppointinfo.html#stoppointcode" class="tsd-kind-icon">stop<wbr>Point<wbr>Code</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,17 +94,32 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="../globals.html#vehicleid" class="tsd-signature-type">VehicleId</a></div>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="../globals.html#stopid" class="tsd-signature-type">StopId</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/671dc76/src/vehicle-locations.ts#L15">vehicle-locations.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/671dc76/src/stop-point-info.ts#L8">stop-point-info.ts:8</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Vehicle Id</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="passengername" class="tsd-anchor"></a>
+					<h3>passenger<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">passenger<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/671dc76/src/stop-point-info.ts#L9">stop-point-info.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="stoppointcode" class="tsd-anchor"></a>
+					<h3>stop<wbr>Point<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">stop<wbr>Point<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/TrapezeApiTypes/blob/671dc76/src/stop-point-info.ts#L10">stop-point-info.ts:10</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -141,18 +142,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="iactualtrippassage.html" class="tsd-kind-icon">IActual<wbr>Trip<wbr>Passage</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="ibasevehiclelocation.html" class="tsd-kind-icon">IBase<wbr>Vehicle<wbr>Location</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibasevehiclelocation.html#id" class="tsd-kind-icon">id</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="ideletedvehiclelocation.html" class="tsd-kind-icon">IDeleted<wbr>Vehicle<wbr>Location</a>
 					</li>
@@ -189,9 +181,24 @@
 					<li class=" tsd-kind-interface">
 						<a href="istoppassage.html" class="tsd-kind-icon">IStop<wbr>Passage</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="istoppointinfo.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Info</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoppointinfo.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoppointinfo.html#passengername" class="tsd-kind-icon">passenger<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="istoppointinfo.html#stoppointcode" class="tsd-kind-icon">stop<wbr>Point<wbr>Code</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="istoppointlocation.html" class="tsd-kind-icon">IStop<wbr>Point<wbr>Location</a>
 					</li>
