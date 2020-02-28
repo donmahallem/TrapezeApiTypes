@@ -23,7 +23,8 @@
         "test:lint": "npm run lint",
         "test:build": "npm run build",
         "test:unit": "npm run test-ci",
-        "test:docs": "npm run docs"
+        "test:docs": "npm run docs",
+        "build:proto": "pbjs -t static-module -w commonjs --force-number -o ./src/models/protos.js ./proto/test.proto && pbts -o ./src/models/protos.d.ts ./src/models/protos.js"
     },
     "homepage": "https://donmahallem.github.io/TrapezeApiTypes/",
     "author": {
@@ -67,6 +68,7 @@
         "mocha": "~7.1.0",
         "nodemon": "~2.0.2",
         "nyc": "~15.0.0",
+        "protobufjs": "^6.8.8",
         "sinon": "~9.0.0",
         "ts-node": "~8.6.2",
         "tslint": "~6.0.0",
