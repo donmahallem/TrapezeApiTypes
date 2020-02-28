@@ -2,7 +2,7 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { StopPointId, StopShortName, VehicleCategory } from './type-util';
+import { VehicleCategory } from './type-util';
 
 /**
  * Information about the stop location
@@ -17,7 +17,7 @@ export interface IStopPointLocation {
     /**
      * Stop Id
      */
-    id: StopPointId;
+    id: string;
     /**
      * label
      */
@@ -37,7 +37,7 @@ export interface IStopPointLocation {
     /**
      * Stop short id
      */
-    shortName: StopShortName;
+    shortName: string;
     /**
      * Stop point
      */

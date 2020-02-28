@@ -2,8 +2,6 @@
  * Source https://github.com/donmahallem/TrapezeApiTypes
  */
 
-import { TripId, VehicleId } from './type-util';
-
 /**
  * Base Vehicle Location.
  * Should only be used as generic for its child implementations
@@ -12,7 +10,7 @@ export interface IBaseVehicleLocation {
     /**
      * Vehicle Id
      */
-    id: VehicleId;
+    id: string;
 }
 
 /**
@@ -86,7 +84,7 @@ export interface IVehicleLocation extends IBaseVehicleLocation {
     /**
      * Current TripId of the vehicle
      */
-    tripId: TripId;
+    tripId: string;
 }
 
 export type VehicleLocations = IDeletedVehicleLocation | IVehicleLocation;
